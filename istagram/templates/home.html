@@ -1,0 +1,8 @@
+{% extends "base.html" %} {%load humanize%} {% block content%}
+
+<p>content from home</p>
+<p>{{ greeting }}</p>
+<p>Best price! 3 for only {{ price | intcomma }}</p>
+{%url "home"%}
+<p>{%url "admin:index"%}</p>
+{% endblock content%}
